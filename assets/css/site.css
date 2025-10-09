@@ -1,0 +1,27 @@
+:root{--bg:#ffffff;--fg:#1a1a1a;--muted:#6b7280;--brand:#2563eb;--brand-2:#0ea5e9;--card:#f8fafc;--border:#e5e7eb;--shadow:0 8px 20px rgba(0,0,0,.06)}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;color:var(--fg);background:var(--bg);font:400 17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+.nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:50}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 0}
+.brand{font-weight:700;letter-spacing:.2px}
+.nav-links{margin-left:auto;display:flex;gap:1rem}
+.btn{display:inline-block;border:1px solid var(--border);padding:.6rem .9rem;border-radius:.6rem;background:#fff;box-shadow:var(--shadow)}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:0;color:#fff}
+.hero{padding:2.5rem 0 1.2rem}
+.hero h1{font-size:2.1rem;margin:.2rem 0}
+.hero p{color:var(--muted);margin:.4rem 0 0}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
+.chip{border:1px solid var(--border);padding:.35rem .6rem;border-radius:999px;color:#111;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin:1rem 0 2rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.card h3{margin:.2rem 0;font-size:1.1rem}
+.card .tags{display:flex;gap:.35rem;flex-wrap:wrap}
+.tag{font-size:.8rem;color:#334155;background:#e2e8f0;border-radius:999px;padding:.2rem .5rem}
+.card .actions{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:.35rem;font-size:.8rem;color:#065f46;background:#d1fae5;border:1px solid #10b981;padding:.2rem .5rem;border-radius:6px}
+.footer{border-top:1px solid var(--border);color:var(--muted);padding:1.2rem 0;margin-top:2rem}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0b0f14;--fg:#e5e7eb;--muted:#9aa4b2;--card:#0f1720;--border:#1f2937;--shadow:none}
+  .btn{background:#0f1720;border-color:#223043}
+}

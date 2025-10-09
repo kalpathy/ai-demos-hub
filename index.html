@@ -1,1 +1,113 @@
-<!doctype html><title>AI Demos Hub</title><h1>AI Demos Hub</h1><p>Coming soon.</p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Demos Hub</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">AI Demos Hub</div>
+      <div class="nav-links">
+        <a href="./">Home</a>
+        <a href="tutorials/arvo-demos/">ARVO Demos</a>
+        <a href="tutorials/grant-writing/">Grant Writing</a>
+        <a href="tutorials/pubmed-search/">Literature Search</a>
+      </div>
+      <a class="btn primary" href="https://github.com/kalpathy/ai-demos-hub">GitHub</a>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Practical AI demos for Researchers, Admins, and Coders</h1>
+      <p>Fast, live examples you can launch now — sentiment analysis, receipt OCR, ARVO ophthalmology demos, grant-writing assistance, and PubMed-powered literature search.</p>
+      <div class="filters">
+        <span class="chip">Researcher</span>
+        <span class="chip">Admin</span>
+        <span class="chip">Coder</span>
+      </div>
+      <div><a class="btn" href="#demos">Jump to demos ↓</a></div>
+    </section>
+
+    <section id="demos">
+      <div class="grid">
+        <article class="card">
+          <span class="badge">Online check pending</span>
+          <h3>Receipt Parser (OCR → CSV)</h3>
+          <p>Upload receipt images and export structured CSV. Azure/Google Vision compatible.</p>
+          <div class="tags">
+            <span class="tag">Vision</span><span class="tag">OCR</span><span class="tag">Admin</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="tutorials/receipt-parser/">Open</a>
+            <a class="btn" href="https://github.com/kalpathy/receipt-parsing">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">Online check pending</span>
+          <h3>Sentiment Analysis</h3>
+          <p>Group feedback into themes and visualize sentiment. Streamlit-ready.</p>
+          <div class="tags">
+            <span class="tag">NLP</span><span class="tag">Researcher</span><span class="tag">Admin</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="tutorials/sentiment/">Open</a>
+            <a class="btn" href="https://github.com/kalpathy/sentiment_app">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">Online check pending</span>
+          <h3>ARVO: Ophthalmology Demos (3)</h3>
+          <p>Three interactive demos from ARVO25 AI4Oph.</p>
+          <div class="tags">
+            <span class="tag">Vision</span><span class="tag">Coder</span><span class="tag">Researcher</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="tutorials/arvo-demos/">Open</a>
+            <a class="btn" href="https://github.com/QTIM-Lab/ARVO25_AI4Oph">Repo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">Online check pending</span>
+          <h3>Grant Writing Assistant</h3>
+          <p>Draft sections and structure aims leveraging Apogee workflows.</p>
+          <div class="tags">
+            <span class="tag">Writing</span><span class="tag">Researcher</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="tutorials/grant-writing/">Open</a>
+            <a class="btn" href="https://apogee-project.github.io/apogee-site/">Docs</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">Online check pending</span>
+          <h3>Literature Search (PubMed/medRxiv)</h3>
+          <p>Query PubMed API, filter by author/year; export citations.</p>
+          <div class="tags">
+            <span class="tag">NLP</span><span class="tag">APIs</span><span class="tag">Coder</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="tutorials/pubmed-search/">Open</a>
+            <a class="btn" href="https://github.com/kalpathy">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> AI Demos Hub · Built for live demos · <a href="https://kalpathy.github.io/community_health/">Community Health style</a></div>
+  </footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
