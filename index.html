@@ -26,67 +26,16 @@
       <h1>Practical AI demos for Researchers, Admins, and Coders</h1>
       <p>Live examples you can launch now — receipt OCR → CSV, sentiment analysis, ARVO ophthalmology demos, grant-writing assistance, and PubMed search.</p>
       <div class="filters">
-        <span class="chip">Researcher</span><span class="chip">Admin</span><span class="chip">Coder</span>
+        <button class="chip" id="filter-researcher">Researcher</button>
+        <button class="chip" id="filter-admin">Admin</button>
+        <button class="chip" id="filter-coder">Coder</button>
       </div>
       <div><a class="btn" href="#demos">Jump to demos ↓</a></div>
     </section>
 
     <section id="demos">
-      <div class="grid">
-        <article class="card">
-          <span class="badge">Online check pending</span>
-          <h3>Receipt Parser (OCR → CSV)</h3>
-          <p>Upload receipt images and export structured CSV. Azure/Google Vision compatible.</p>
-          <div class="tags"><span class="tag">Vision</span><span class="tag">OCR</span><span class="tag">Admin</span></div>
-          <div class="actions">
-            <a class="btn primary" href="tutorials/receipt-parser/">Open</a>
-            <a class="btn" href="https://github.com/kalpathy/receipt-parsing">Repo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Online check pending</span>
-          <h3>Sentiment Analysis</h3>
-          <p>Group feedback into themes and visualize sentiment. Streamlit-ready.</p>
-          <div class="tags"><span class="tag">NLP</span><span class="tag">Researcher</span><span class="tag">Admin</span></div>
-          <div class="actions">
-            <a class="btn primary" href="tutorials/sentiment/">Open</a>
-            <a class="btn" href="https://github.com/kalpathy/sentiment_app">Repo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Online check pending</span>
-          <h3>ARVO: Ophthalmology Demos (3)</h3>
-          <p>Three interactive demos from ARVO25 AI4Oph.</p>
-          <div class="tags"><span class="tag">Vision</span><span class="tag">Coder</span><span class="tag">Researcher</span></div>
-          <div class="actions">
-            <a class="btn primary" href="tutorials/arvo-demos/">Open</a>
-            <a class="btn" href="https://github.com/QTIM-Lab/ARVO25_AI4Oph">Repo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Online check pending</span>
-          <h3>Grant Writing Assistant</h3>
-          <p>Draft sections and structure aims leveraging Apogee workflows.</p>
-          <div class="tags"><span class="tag">Writing</span><span class="tag">Researcher</span></div>
-          <div class="actions">
-            <a class="btn primary" href="tutorials/grant-writing/">Open</a>
-            <a class="btn" href="https://apogee-project.github.io/apogee-site/">Docs</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="badge">Online check pending</span>
-          <h3>Literature Search (PubMed/medRxiv)</h3>
-          <p>Query PubMed API, filter by author/year; export citations.</p>
-          <div class="tags"><span class="tag">NLP</span><span class="tag">APIs</span><span class="tag">Coder</span></div>
-          <div class="actions">
-            <a class="btn primary" href="tutorials/pubmed-search/">Open</a>
-            <a class="btn" href="https://github.com/kalpathy">Repo</a>
-          </div>
-        </article>
+      <div id="cards" class="grid">
+        <noscript>Please enable JavaScript to view the demo cards.</noscript>
       </div>
     </section>
   </main>
@@ -95,5 +44,6 @@
     <div class="container">© <span id="y"></span> AI Demos Hub · Built for live demos · <a href="https://kalpathy.github.io/community_health/">Community Health style</a></div>
   </footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="assets/js/render.js"></script>
 </body>
 </html>
