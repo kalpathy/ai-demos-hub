@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARVO Demo 3 — NotebookLM over papers</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+  <div class="container">
+    <p><a class="btn" href="../../">← Back</a></p>
+    <h1>ARVO Demo 3 — NotebookLM over papers</h1>
+    <p>Build a lightweight literature “notebook” using <strong>NotebookLM</strong>: upload a small set of PDFs and ask focused questions for summarization, comparisons, and quick figures.</p>
+
+    <div class="actions" style="margin:.5rem 0;display:flex;flex-wrap:wrap;gap:.5rem">
+      <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener">Open NotebookLM</a>
+      <a class="btn" href="https://github.com/QTIM-Lab/ARVO25_AI4Oph#exercise-3-using-notebooklm" target="_blank" rel="noopener">Original Instructions</a>
+      <a class="btn" href="https://github.com/QTIM-Lab/ARVO25_AI4Oph/tree/main/exercise_3/papers" target="_blank" rel="noopener">Sample Papers (repo)</a>
+    </div>
+
+    <h2>Quick start</h2>
+    <ol>
+      <li>Open NotebookLM and create a new notebook.</li>
+      <li>Add sources:
+        <ul>
+          <li>Upload PDFs (e.g., from <em>exercise_3/papers</em> in the ARVO repo), or</li>
+          <li>Paste stable public URLs (publisher PDFs or raw GitHub PDF links).</li>
+        </ul>
+      </li>
+      <li>Use guided prompts below to generate summaries, compare methods, and extract key tables.</li>
+    </ol>
+
+    <h3>Guided prompts (copy/paste)</h3>
+    <ul>
+      <li><code>Summarize each paper in two bullet points: main goal and primary result.</code></li>
+      <li><code>Create a comparison table with columns: Paper, Modality, Dataset size, Primary metric, Best value, Limitations.</code></li>
+      <li><code>Extract all reported AUC values and list them with 95% CIs if available.</code></li>
+      <li><code>From the methods sections, list preprocessing steps and model classes used.</code></li>
+      <li><code>Provide a 5-sentence synthesis: where do these papers agree or disagree, and why?</code></li>
+    </ul>
+
+    <details><summary>Tips</summary>
+      <ul>
+        <li>Use 2–4 PDFs for a crisp live demo.</li>
+        <li>If a PDF fails to parse, upload the file instead of a URL.</li>
+        <li>Ask for tables; NotebookLM can output tabular summaries you can copy to CSV.</li>
+      </ul>
+    </details>
+
+    <p class="badge">Source: ARVO25_AI4Oph Exercise 3 (NotebookLM workflow).</p>
+  </div>
+</body>
+</html>
