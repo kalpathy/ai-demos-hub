@@ -1,80 +1,77 @@
 [
   {
-    "title": "Receipt Parser (OCR \u2192 CSV)",
+    "title": "Receipt Parser (OCR → CSV)",
     "slug": "receipt-parser",
-    "personas": [
-      "Admin",
-      "Coder"
-    ],
+    "personas": ["Admin", "Coder"],
     "domain": "Vision",
     "difficulty": "Intermediate",
-    "tags": [
-      "ocr",
-      "azure",
-      "google_vision",
-      "csv",
-      "streamlit"
-    ],
+    "tags": ["ocr", "azure", "google_vision", "csv", "streamlit"],
     "repo": "https://github.com/kalpathy/receipt-parsing",
-    "demo_url": "",
+    "demo_url": "http://localhost:8599",
     "doc_url": "https://github.com/kalpathy/receipt-parsing/blob/main/README.md",
     "thumb": "assets/img/receipt.png",
-    "status": "unknown"
+    "status": "online"
   },
   {
     "title": "Sentiment Analysis",
     "slug": "sentiment",
-    "personas": [
-      "Researcher",
-      "Admin"
-    ],
+    "personas": ["Researcher", "Admin"],
     "domain": "NLP",
     "difficulty": "Beginner",
-    "tags": [
-      "nlp",
-      "themes",
-      "visualization",
-      "streamlit"
-    ],
+    "tags": ["nlp", "themes", "visualization", "streamlit"],
     "repo": "https://github.com/kalpathy/sentiment_app",
-    "demo_url": "",
+    "demo_url": "http://localhost:8502",
     "doc_url": "https://github.com/kalpathy/sentiment_app/blob/main/README.md",
     "thumb": "assets/img/sentiment.png",
-    "status": "unknown"
+    "status": "online"
   },
   {
-    "title": "ARVO: Ophthalmology Demos (3)",
-    "slug": "arvo-demos",
-    "personas": [
-      "Researcher",
-      "Coder"
-    ],
-    "domain": "Vision",
-    "difficulty": "Intermediate",
-    "tags": [
-      "ophthalmology",
-      "arvo25",
-      "notebooks"
-    ],
-    "repo": "https://github.com/QTIM-Lab/ARVO25_AI4Oph",
-    "demo_url": "",
-    "doc_url": "https://github.com/QTIM-Lab/ARVO25_AI4Oph#readme",
-    "thumb": "assets/img/arvo.png",
-    "status": "unknown"
-  },
+  "title": "ARVO Demo 1 — Table extraction from screenshots",
+  "slug": "arvo-ex1",
+  "personas": ["Researcher", "Coder"],
+  "domain": "Vision",
+  "difficulty": "Beginner",
+  "tags": ["ocr", "csv", "vision", "prompting"],
+  "repo": "https://github.com/QTIM-Lab/ARVO25_AI4Oph",
+  "demo_url": "", 
+  "doc_url": "https://github.com/QTIM-Lab/ARVO25_AI4Oph#exercise-1-using-chatgpt-to-extract-data-from-a-screenshot",
+  "thumb": "assets/img/arvo.png",
+  "status": "online"
+},
+{
+  "title": "ARVO Demo 2 — Quick analysis on GRAPE",
+  "slug": "arvo-ex2",
+  "personas": ["Researcher", "Coder"],
+  "domain": "Data",
+  "difficulty": "Beginner",
+  "tags": ["notebook", "regression", "plots"],
+  "repo": "https://github.com/kalpathy/ai-demos-hub/tree/main/notebooks/arvo-ex2",
+  "demo_url": "https://colab.research.google.com/github/kalpathy/ai-demos-hub/blob/main/notebooks/arvo-ex2/ex_2_plotting.ipynb",
+  "doc_url": "https://github.com/QTIM-Lab/ARVO25_AI4Oph#exercise-2-simple-data-analysis-like-regression-plotting",
+  "thumb": "assets/img/arvo.png",
+  "status": "online"
+},
+{
+  "title": "ARVO Demo 3 — NotebookLM over papers",
+  "slug": "arvo-ex3",
+  "personas": ["Researcher"],
+  "domain": "Reading",
+  "difficulty": "Beginner",
+  "tags": ["notebooklm", "summarization", "pdf"],
+  "repo": "https://github.com/QTIM-Lab/ARVO25_AI4Oph",
+  "demo_url": "https://notebooklm.google.com", 
+  "doc_url": "https://github.com/QTIM-Lab/ARVO25_AI4Oph#exercise-3-using-notebooklm",
+  "thumb": "assets/img/arvo.png",
+  "status": "online"
+},
+
   {
     "title": "Grant Writing Assistant",
     "slug": "grant-writing",
-    "personas": [
-      "Researcher"
-    ],
+    "personas": ["Researcher"],
     "domain": "Writing",
     "difficulty": "Beginner",
-    "tags": [
-      "grants",
-      "writing",
-      "apogee"
-    ],
+    "tags": ["grants", "writing", "apogee"],
     "repo": "https://apogee-project.github.io/apogee-site/",
     "demo_url": "https://apogee-project.github.io/apogee-site/",
     "doc_url": "https://apogee-project.github.io/apogee-site/",
@@ -84,20 +81,12 @@
   {
     "title": "Literature Search (PubMed/medRxiv)",
     "slug": "pubmed-search",
-    "personas": [
-      "Coder",
-      "Researcher"
-    ],
+    "personas": ["Coder", "Researcher"],
     "domain": "NLP",
     "difficulty": "Intermediate",
-    "tags": [
-      "pubmed",
-      "api",
-      "streamlit",
-      "medrxiv"
-    ],
+    "tags": ["pubmed", "api", "streamlit", "medrxiv"],
     "repo": "https://github.com/kalpathy",
-    "demo_url": "",
+    "demo_url": "http://localhost:8503",
     "doc_url": "",
     "thumb": "assets/img/pubmed.png",
     "status": "unknown"

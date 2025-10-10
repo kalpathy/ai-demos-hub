@@ -1,3 +1,50 @@
-<!doctype html><title>receipt-parser</title><link rel="stylesheet" href="../../assets/css/site.css">
-<div class="container"><p><a class="btn" href="../../">← Back</a></p><h1>receipt parser demo</h1>
-<p>Subpage placeholder. We’ll wire buttons and (if possible) an embedded Streamlit frame next.</p></div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Demos Hub</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">AI Demos Hub</div>
+      <div class="nav-links">
+        <a href="./">Home</a>
+        <a href="tutorials/arvo-demos/">ARVO Demos</a>
+        <a href="tutorials/grant-writing/">Grant Writing</a>
+        <a href="tutorials/pubmed-search/">Literature Search</a>
+      </div>
+      <a class="btn primary" href="https://github.com/kalpathy/ai-demos-hub">GitHub</a>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Practical AI demos for Researchers, Admins, and Coders</h1>
+      <p>Live examples you can launch now — receipt OCR → CSV, sentiment analysis, ARVO ophthalmology demos, grant writing, and PubMed search.</p>
+      <div class="filters">
+        <button class="chip" id="filter-researcher">Researcher</button>
+        <button class="chip" id="filter-admin">Admin</button>
+        <button class="chip" id="filter-coder">Coder</button>
+      </div>
+      <div><a class="btn" href="#demos">Jump to demos ↓</a></div>
+    </section>
+
+    <section id="demos">
+      <div id="cards" class="grid">
+        <noscript>Please enable JavaScript to view the demo cards.</noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="y"></span> AI Demos Hub · <a href="https://kalpathy.github.io/community_health/">Community Health style</a></div>
+  </footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+<!-- cache-bust the JS -->
+<script src="assets/js/render.js?v=3"></script>
+</body>
+</html>

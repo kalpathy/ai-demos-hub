@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARVO Demo 2 — GRAPE quick analysis</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+
+<body>
+  <div class="container">
+    <p><a class="btn" href="../../">← Back</a></p>
+    <h1>ARVO Demo 2 — Quick analysis on GRAPE</h1>
+    <p>This exercise reproduces <strong>Exercise 2</strong> from the 
+      <a href="https://github.com/QTIM-Lab/ARVO25_AI4Oph" target="_blank" rel="noopener">ARVO AI4Oph repository</a>.
+      It demonstrates simple exploratory data analysis and linear regression on the GRAPE dataset using
+      <em>pandas</em>, <em>matplotlib</em>, and <em>scikit-learn</em>.
+    </p>
+
+    <div class="actions" style="margin:.5rem 0;display:flex;flex-wrap:wrap;gap:.5rem">
+      <!-- update kalpathy to your actual username if different -->
+      <a class="btn primary" 
+         href="https://colab.research.google.com/github/kalpathy/ai-demos-hub/blob/main/notebooks/arvo-ex2/ex_2_plotting.ipynb"
+         target="_blank" rel="noopener">Open in Colab</a>
+      <a class="btn" 
+         href="https://github.com/kalpathy/ai-demos-hub/blob/main/notebooks/arvo-ex2/ex_2_plotting.ipynb"
+         target="_blank" rel="noopener">View on GitHub</a>
+      <a class="btn" 
+         href="https://github.com/QTIM-Lab/ARVO25_AI4Oph#exercise-2-simple-data-analysis-like-regression-plotting"
+         target="_blank" rel="noopener">Original Instructions</a>
+    </div>
+
+    <h2>About this demo</h2>
+    <p>
+      The GRAPE dataset contains measurements of retinal biomarkers from a small synthetic cohort.
+      You will explore basic relationships between predictors and outcomes, create quick plots, 
+      and fit a linear regression model.
+    </p>
+
+    <h3>Typical Colab setup (first cell)</h3>
+<pre style="white-space:pre-wrap">
+!pip -q install pandas matplotlib scikit-learn
+import pandas as pd, numpy as np, matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+</pre>
+
+    <h3>Example workflow</h3>
+    <ol>
+      <li>Load the GRAPE CSV from your repository or the link below:</li>
+<pre style="white-space:pre-wrap">
+CSV_URL = "https://raw.githubusercontent.com/kalpathy/ai-demos-hub/main/notebooks/arvo-ex2/GRAPE.csv"
+df = pd.read_csv(CSV_URL)
+df.head()
+</pre>
+      <li>Explore summary statistics and missing data:</li>
+<pre style="white-space:pre-wrap">
+df.describe()
+df.isna().mean()
+</pre>
+      <li>Fit a quick regression and plot:</li>
+<pre style="white-space:pre-wrap">
+m = LinearRegression().fit(df[['Predictor']], df['Outcome'])
+plt.scatter(df['Predictor'], df['Outcome'])
+plt.plot(df['Predictor'], m.predict(df[['Predictor']]), color='r')
+</pre>
+    </ol>
+
+    <details>
+      <summary>Run locally (Jupyter)</summary>
+<pre style="white-space:pre-wrap">
+uv venv && source .venv/bin/activate
+uv pip install jupyter pandas matplotlib scikit-learn
+python -m jupyter lab
+# open notebooks/arvo-ex2/ex_2_plotting.ipynb
+</pre>
+    </details>
+
+    <p class="badge">
+      Notebook: <code>notebooks/arvo-ex2/ex_2_plotting.ipynb</code> · Source: ARVO25_AI4Oph Exercise 2
+    </p>
+  </div>
+</body>
+</html>
